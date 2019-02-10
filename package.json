@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "find people with common traits and interests",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedern/FriendFinder.git"
+  },
+  "author": "Darren Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedern/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/thedern/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
