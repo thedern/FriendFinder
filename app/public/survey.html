@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/custom.css">
+
 </head>
 
 <body>
@@ -214,6 +217,7 @@
     // Capture the form inputs
     $("#submit").on("click", function(event) {
       event.preventDefault();
+      console.log('clicked submit');
 
       // Form validation
       function validateForm() {
@@ -252,6 +256,7 @@
             $("#q10").val()
           ]
         };
+        console.log('user data is ', userData);
 
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
@@ -264,6 +269,7 @@
           $("#results-modal").modal("toggle");
 
         });
+        
       } else {
         alert("Please fill out all fields before submitting!");
       }

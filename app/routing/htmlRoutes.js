@@ -6,7 +6,7 @@
 const path = require('path');
 
 
-// takes expres app as argument
+// takes express app as argument from calling function.  No need to require express in this file
 module.exports = function(app) {
 
     // get routes for home and survey pages
