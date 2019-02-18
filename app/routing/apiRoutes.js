@@ -94,17 +94,19 @@ module.exports = function(app, parser) {
                 if (finalScores[f] === smallestVal) {
                     // save off index
                     var smallestNext = finalScores.indexOf(finalScores[f])
+                    // not being used right now
                     matchingFriends.push(smallestNext)
                 }
-
             }
-              
         }
 
         // will assume a single matching friend for now
-        console.log(friends[smallestIndex]);
+        // console.log(friends[smallestIndex]);
         res.send(friends[smallestIndex]);
 
+        //clear finalscores w/o redeclaring it, else scores accumulate
+        finalScores.splice(0,finalScores.length)
+        // console.log(finalScores.length);
     
     });
 }
