@@ -1,0 +1,28 @@
+<% include header %>
+
+<div class="container friends">
+    <h2>Potential Friends Are:</h2>
+    <!-- object name exported by friends.js is 'buddies'-->
+
+    <ul class="friendsList">
+        <!-- no '=' when executing code, just the less than percent -->
+        <% friends.buddies.forEach((item) => { %>
+            <!-- when getting a value from a variable, use less than percent equals -->
+                <li>name: <%= item.name %></li>
+                <li>photo: <%= item.photo %></li>
+                <li>scores: <%= item.scores %></li>
+                <br>
+                <br>
+                
+        <% }); %>
+    </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p><a href="/">Back to Home Page</a></p>
+    </div>
+</footer>
+
+
+<% include header %>

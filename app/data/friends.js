@@ -2,32 +2,31 @@
 
 module.exports.buddies = [
   {
-    name: "Homer",
+    name: "Mr Burns",
     photo:
-      "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+      "http://www.simpsonsforever.com/images/episodes/characters/16.jpg",
     scores: ["5", "1", "4", "4", "5", "1", "2", "5", "4", "1"]
   },
   {
-    name: "Jacob Deming",
+    name: "Homer Simpson",
     photo:
-      "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+      "http://www.simpsonsforever.com/images/episodes/characters/1.jpg",
     scores: ["4", "2", "5", "1", "3", "2", "2", "1", "3", "2"]
   },
   {
-    name: "Jeremiah Scanlon",
-    photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+    name: "Moe Szyslak",
+    photo: "http://www.simpsonsforever.com/images/episodes/characters/20.jpg",
     scores: ["5", "2", "2", "2", "4", "1", "3", "2", "5", "5"]
   },
   {
-    name: "Louis T. Delia",
-    photo:
-      "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+    name: "Mayor Quimby",
+    photo: "http://www.simpsonsforever.com/images/episodes/characters/119.jpg",
     scores: ["3", "3", "4", "2", "2", "1", "3", "2", "2", "3"]
   },
   {
-    name: "Lou Ritter",
+    name: "Dr Hibbert",
     photo:
-      "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+      "http://www.simpsonsforever.com/images/episodes/characters/144.jpg",
     scores: ["4", "3", "4", "1", "5", "2", "5", "3", "1", "4"]
   }
 ];

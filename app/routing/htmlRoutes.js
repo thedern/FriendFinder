@@ -20,6 +20,7 @@ module.exports = function(app) {
 
     // get routes for home and survey pages
     app.get('/', (req, res) => {
+        // render via ejs
         res.render('home');
     });
 
@@ -29,5 +30,4 @@ module.exports = function(app) {
     });
 
     
-
 }

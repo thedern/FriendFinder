@@ -47,8 +47,9 @@ module.exports = function(app, parser) {
     app.get('/api/friends', (req, res) => {
 
         // render the json from the imported friends.js on screen
-        res.json(friendList);
-        // I want to render a view here
+        // send object key = friends: value: friendList object
+        // frindList contains the 'buddies' object which will be used in view
+        res.render('friendList',{friends: friendList});
 
     });
 
