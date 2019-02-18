@@ -24,7 +24,8 @@ module.exports = function(app) {
     });
 
     app.get('/survey', (req, res) => {
-        res.render('survey');
+        //res.render('survey');
+        res.send('survey.html');
     });
 
     

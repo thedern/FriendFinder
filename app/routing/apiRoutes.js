@@ -79,6 +79,7 @@ module.exports = function(app, parser) {
 
             // get the index of the smallest integer value from scores array, returns the first matching index
             var smallestIndex = indexOfSmallest(finalScores);
+            console.log(smallestIndex);
     
             // get value of the smallest index
             var smallestVal = finalScores[smallestIndex];
@@ -100,6 +101,7 @@ module.exports = function(app, parser) {
         }
 
         // will assume a single matching friend for now
+        console.log(friends[smallestIndex]);
         res.send(friends[smallestIndex]);
 
     
