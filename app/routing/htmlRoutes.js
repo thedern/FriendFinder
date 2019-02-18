@@ -20,13 +20,14 @@ module.exports = function(app) {
 
     // get routes for home and survey pages
     app.get('/', (req, res) => {
+        // render via ejs
         res.render('home');
     });
 
     app.get('/survey', (req, res) => {
-        res.render('survey');
+       // cannot use view with client-side javascript, therefore using html file
+       res.sendFile(path.join(__dirname, '../public', 'survey.html'));
     });
 
     
-
 }

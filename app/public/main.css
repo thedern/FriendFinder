@@ -86,9 +86,29 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     border: #fff solid 2px;
+    background-color: #f1c40f;
 }
 
 .footer a {
+    font-size: 2rem;
     text-decoration: none;
+    color: blue;
+}
+
+.friends {
     color: #fff;
+}
+
+
+.friends ul li {
+    color: #000;
+    list-style: none;
+}
+
+#survey {
+    background-image: url('Familyguysimpsons0.jpg');
+    background-position: center; /* Center the image */
+    background-size: cover;
+    background-repeat: no-repeat; /* Do not repeat the image */
+
 }
