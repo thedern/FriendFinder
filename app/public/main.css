@@ -1,0 +1,94 @@
+
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #16a085;
+    overflow-x: hidden;
+
+}
+
+.v-header{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    color: #fff;
+
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #27ae60;
+    /*background: #225470;*/
+    z-index: 1;
+    opacity: 0.85;
+
+}
+
+.main {
+    z-index:1;
+    color: #fff;
+}
+
+.main h1 {
+    font-size: 7rem;
+}
+
+
+
+.main a {
+    text-decoration: none;
+    color: tan;
+}
+
+.main a:link, .footer a:link {
+    text-decoration: none;
+}
+
+.main a:hover, .footer a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.api {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.questions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #fff solid 2px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}

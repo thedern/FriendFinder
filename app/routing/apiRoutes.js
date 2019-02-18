@@ -8,11 +8,15 @@ const friendList = require('../data/friends');
 var finalScores = [];
 var matchingFriends = [];
 
-
 // pass in express and parser to evaluate request body
 module.exports = function(app, parser) {
 
-    // Function to do math on your and friends compatibility score
+
+    /* ==========================================================================
+       Functions for Math and Determining Indexes
+       ========================================================================== */
+    
+    // Function to do math on your and your friends compatibility scores
     function compareFriends(you, friend) {
         var total = 0;
         for (var i = 0; i <= 9; i++) {
@@ -21,6 +25,7 @@ module.exports = function(app, parser) {
         }
         // push final total onto the finalValues array
         finalScores.push(total);
+        
         // return to calling function
         return;
     }
@@ -33,6 +38,11 @@ module.exports = function(app, parser) {
         return array.indexOf(Math.min.apply(Math, array));
     }
     
+
+    /* ==========================================================================
+       GET
+       ========================================================================== */
+    
     // get route to display all friends 
     app.get('/api/friends', (req, res) => {
 
@@ -42,6 +52,11 @@ module.exports = function(app, parser) {
 
     });
 
+
+    /* ==========================================================================
+       POST
+       ========================================================================== */
+    
     app.post('/api/friends', (req, res) => {
         // conver strings to integers
         req.body.scores = req.body.scores.map(x => parseInt(x));
