@@ -24,8 +24,8 @@ module.exports = function(app) {
     });
 
     app.get('/survey', (req, res) => {
-        //res.render('survey');
-        res.send('survey.html');
+       // cannot use view with client-side javascript, therefore using html file
+       res.sendFile(path.join(__dirname, '../public', 'survey.html'));
     });
 
     
