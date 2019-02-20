@@ -8,7 +8,7 @@
     const path = require('path');
 
     // set listening port
-    const PORT = 3000;
+    const PORT = process.env.PORT || 3000;
 
     // create express app
     const app = express();
